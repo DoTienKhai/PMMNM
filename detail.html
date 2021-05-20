@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./wwwroot/styles.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.11.2-web/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+</head>
+<style>
+    .color ul li img{display: none;}
+</style>
+<body>
+    <section id="up">
+        <header>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="#">Bản mobile</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Trung tâm bảo hành</a></li>
+                    <li><a href="#">Hệ thống cửa hàng</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Đơn hàng</a></li>
+                    <li><a href="#">Đăng nhập</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="nav-bar-search">
+            <div class="logo">
+                <a href="">
+                    <img src="./images/entity.png" alt="" width="50px" height="50px">
+                    <span>HoangHaMobile</span>
+                </a>
+            </div>
+            <div class="search">
+                <div>
+                    <input type="text" placeholder="Hôm nay bạn muốn cái gì ?'Nói' " />
+                </div>
+                <span class="icon">
+                    <i class="fas fa-search"></i>
+                </span>
+            </div>
+            <div class="check-cart">
+                <i class="fas fa-car"></i>
+                <p>Kiểm tra đơn hàng</p>
+            </div>
+            <a href="" class="cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span>0</span>
+            </a>
+        </div>
+
+        <div class="categories">
+            <ul>
+                <li>
+                    <a href="">Iphone</a>
+                    <div class="loading-bar"></div>
+                </li>
+                <li><a href="">SamSung</a>
+                    <div class="loading-bar"></div>
+                </li>
+                <li><a href="">Xiaomi</a>
+                    <div class="loading-bar"></div>
+                </li>
+                <li><a href="">Oppo</a>
+                    <div class="loading-bar"></div>
+                </li>
+                <li><a href="">Vsmart</a>
+                    <div class="loading-bar"></div>
+                </li>
+                <li><a href="">Huawei</a>
+                    <div class="loading-bar"></div>
+                </li>
+                <li><a href="">Vivo</a>
+                    <div class="loading-bar"></div>
+                </li>
+                <li><a href="">Nokia</a>
+                    <div class="loading-bar"></div>
+                </li>
+                <li><a href="">Bphone</a>
+                    <div class="loading-bar"></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Main  -->
+    <div class="main">
+        <div class="breadcrump">
+            <!-- Link về trang chủ -->
+            <a href="" class="breadcrump-label"><i class="fas fa-home"></i> Trang chủ</a> > 
+            
+            <!-- Link về trang các sản phẩm theo danh mục -->
+            <a href="" class="breadcrump-label">Samsung</a> >
+
+            <!-- Link trang details hiện tại -->
+            <a href="" class="breadcrump-label breadcrump-label--active">Samsung Galaxy A32 - Chính hãng</a>
+        </div>
+
+        <div class="product-details">
+            <span class="product-name">Điện thoại di động Samsung Galaxy A32 - Chính hãng</span>
+
+            <div class="product-container">
+                
+                <div class="product-img">
+                    
+                    <div class="img-main">
+                         <!-- Link ảnh -->
+                    <img src="./images/image-removebg-preview.png" id="mainImg">
+                    </div>
+                   
+
+                    <div class="product-img-overlay"></div>
+
+                    <!-- Nút Yêu thích -->
+                    <div class="product-img-favorite">
+                        <!-- <i class="far fa-heart"></i>
+                        <i class="fas fa-heart"></i> -->
+                        <input type="checkbox" id="heart" name="rating" value="1">
+                        <label for="heart" class="full">
+                            <i class="fas fa-heart"></i>
+                        </label>
+                    </div>
+                    
+                   
+                </div>
+                <div class="product-center">
+                    <div class="color">
+                        <ul>
+                            <li>
+                                <div>
+                                    <img src="./images/image-removebg-preview.png" alt="" id="three" onclick="changeImg('three')">
+                                    <input type="radio"  name="img" id="three" onclick="changeImg('three')" checked>
+                                    <label for="">Trắng</label><span style="background: white;"></span>
+                                </div>
+                                <div>
+                                    <img src="./images/bluea32.jpg" alt="" id="one" onclick="changeImg('one')">
+                                    <input type="radio"  name="img" id="one" onclick="changeImg('one')">
+                                    <label for="">Xanh</label><span style="background: blue;"></span>
+                                </div>
+                                <div>
+                                    <img src="./images/blacka32.jpg" alt="" id="two" onclick="changeImg('two')">
+                                    <input type="radio"  name="img" id="two" onclick="changeImg('two')">
+                                    <label for="">Đen</label><span style="background: black;"></span>
+                                </div>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="product-price">5,790,000 ₫</span>
+                    <span class="product-price-note"><i>Giá Niêm Yết: <!-- Giá cũ --><span>6,690,000 ₫ </span>. Từ 9-11/4 Hotsale giảm sốc giá chỉ còn: <!-- Giá mới -->5.790.000đ. Số lượng có hạn áp dụng một số thành phố.</i></span>
+                    <div class="product-freeship">
+                        <i class="fas fa-truck"></i> Miễn phí vận chuyển trên toàn quốc
+                    </div>
+                    <!-- Giỏ hàng -->
+                    <div class="product-cart">
+                        Thêm vào giỏ hàng <i class="fas fa-cart-plus"></i>
+                    </div>
+                </div>
+                <div class="product-warranty">
+                    <span>Thông tin bảo hành</span>
+                    <span><i class="far fa-check-circle"></i> Bảo hành chính hãng 12 tháng. Bao xài đổi trả trong 15 ngày.</span>
+                </div>
+
+                <!-- Mô tả -->
+                <div class="product-description">
+                    <div class="product-description-label">Mua điện thoại Samsung Galaxy A32 giá rẻ chính hãng tại Hoàng Hà Mobile</div>
+                    <div class="product-description-text">
+                        Nếu như bạn đang tìm mua một mẫu điện thoại chính hãng có thiết kế đẹp, cấu hình ổn nhưng phải có mức giá rẻ thì Samsung Galaxy A32 chính là một sự lựa chọn hợp lý nhất dành cho bạn.
+                        <h4>Thiết kế hiện đại, mới mẻ</h4>
+                        Samsung Galaxy A32 sở hữu một thiết kế cực kì hiện đại và thời thượng, khác biệt hẳn so với thế hệ Galaxy A31 tiền nhiệm. Máy có tổng thể “số đo 3 vòng” lần lượt là 158.9 x 73.6 x 8.4 mm cùng với khối lượng chỉ 184g. Thông số này sẽ giúp cho người dùng có một trải nghiệm cầm nắm dễ chịu nhất, dễ dàng cho quá trình sử dụng hàng ngày.
+                        <img src="./images/5f79ff9f43ceb390eadf-4.jpg">
+                        Galaxy A32 được trang bị màn hình được thiết kế theo ngôn ngữ Infinity-U dạng giọt nước quen thuộc với phần viền 2 bên cực mỏng, giúp người dùng có một không gian trải nghiệm rộng rãi và thoải mái hơn. Đi cùng với đó là kích thước rộng tới 6.4 inch, độ phân giải Full HD+ giúp mang lại một khả năng hiển thị rõ ràng, sắc nét trong việc chơi game hoặc lướt web.
+                        <h4>Hiệu năng mượt mà với Helio G80</h4>
+                        Cung cấp sức mạnh xử lý cho Galaxy A32 là con chip Helio G80 8 nhân 64-bit tới từ MediaTek. Đây là con chip được MediaTek giới thiệu là có hiệu suất cao hơn tới 25% so với các dòng chip cũ của hãng. Việc Galaxy A32 được trang bị con chip này sẽ tạo ra một trải nghiệm chơi game và chất lượng hình ảnh tốt nhất trong tầm giá. Không chỉ vậy, con chip Helio G80 còn mang tới một tốc độ truy cập internet cực kì nhanh chóng.
+                        <img src="./images/ss-a32-kva3-faq-1-402x563.jpg">
+                        Đi cùng với Helio G80 là thanh RAM 6GB cùng với 128GB bộ nhớ trong và có hỗ trợ mở rộng thêm không gian lưu trữ thông qua khe cắm microSD, giúp người dùng có được trải nghiệm lưu trữ thoải mái nhất. Máy được cài đặt sẵn Android 11 cùng giao diện tùy biến OneUI 3.0 ngay khi xuất xưởng.
+                        <h4>Chụp ảnh ấn tượng với bộ tứ camera 64MP</h4>
+                        Hệ thống camera của Galaxy A32 cũng là một ưu điểm không thể không nhắc tới. Tuy chỉ là mẫu điện thoại nằm ở phân khúc tầm trung thế nhưng máy cũng được trang bị một hệ thống camera sau với 4 cảm biến chất lượng bao gồm camera chính 64MP, camera góc siêu rộng 8MP, và camera macro cùng tele có cùng độ phân giải 5MP. Cụm camera này cũng hỗ trợ đầy đủ các tính năng phổ biến nhất như chụp lấy nét tự động Auto Focus, HDR, chụp Panorama, quay video 4K@30fps, 1080p@30/120fps.
+                        <img src="./images/a32.jpg">
+                        Trong khi đó, camera selfie phía trước sẽ có độ phân giải là 20MP, khẩu độ f/2.2, hỗ trợ quay video ở độ phân giải chuẩn Full HD 1080p@30fps. Với camera trước 20MP này, Galaxy A32 hứa hẹn sẽ mang tới cho người dùng những bức ảnh cực kì sắc nét với chất lượng tốt nhất.
+                        <h4>Dung lượng pin lớn, hỗ trợ sạc nhanh</h4>
+                        Samsung Galaxy A32 được trang bị viên pin dung lượng 5.000mAh. Dung lượng pin này sẽ cho phép người dùng có thể sử dụng thoải mái trong cả ngày dài làm việc hoặc lên tới 2 ngày nếu chỉ sử dụng với các tác vụ nhẹ nhàng. Đặc biệt, máy cũng hỗ trợ công nghệ sạc nhanh 15W giúp thiết bị nạp đầy được năng lượng trong thời gian nhanh nhất.
+                        Đến ngay với <!-- Link trang chủ -->https://hoanghamobile.com/ để mua điện thoại Galaxy A32 giá tốt nhất thị trường. Chiếc smartphone này chắc chắn sẽ không làm bạn thất vọng. Tham khảo thêm các sản phẩm khác của Samsung tại đường link <!-- Link trang danh sách sản phẩm --> https://hoanghamobile.com/dien-thoai-di-dong/samsung.
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div class="product-info-label">Thông số kỹ thuật Samsung Galaxy A32 - Chính hãng</div>
+
+                    <!-- Link ảnh -->
+                    <img src="./images/image-removebg-preview.png">
+
+                    <ul class="product-info-list">
+                        <li class="product-info-item">
+                            <strong>Công nghệ màn hình:</strong>
+                            <span>Super AMOLED</span>
+                        </li>
+                        <li class="product-info-item">
+                            <strong>Độ phân giải:</strong>
+                            <span>Full HD+ (1080 x 2400 Pixels)</span>
+                        </li>
+                        <li class="product-info-item">
+                            <strong>Màn hình rộng:</strong>
+                            <span>6.4"</span>
+                        </li>
+                        <li class="product-info-item">
+                            <strong>Tốc độ CPU:</strong>
+                            <span>2 nhân 2.0 GHz & 6 nhân 1.8 GHz</span>
+                        </li>
+                        <li class="product-info-item">
+                            <strong>Hệ điều hành:</strong>
+                            <span>Android 11</span>
+                        </li>
+                        <li class="product-info-item">
+                            <strong>RAM:</strong>
+                            <span>6GB</span>
+                        </li>
+                        <li class="product-info-item">
+                            <strong>Kích thước:</strong>
+                            <span>Dài 158.9 mm - Ngang 73.6 mm - Dày 8.4 mm</span>
+                        </li>
+                        <li class="product-info-item">
+                            <strong>Dung lượng pin:</strong>
+                            <span>5000 mAh</span>
+                        </li>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gợi ý sản phẩm khác -->    
+            <div class="recommander">
+                <div class="recommander-label"><div></div>Gợi ý dành cho bạn</div>
+
+                <ul class="recommander-list">
+                    <li class="recommander-item">
+                        <a href="" class="recommander-item-link">
+                            <img src="https://hoanghamobile.com/i/productlist/dsp/Uploads/2021/02/19/a20s-3.png">
+                            <!-- Tên điện thoại -->
+                            <span class="recommander-item-name">Samsung Galaxy A02s 4GB/64GB - Chính hãng</span>
+                            <div class="recommander-item-price">
+                                <!-- Giá mới -->
+                                <span>2.980.000 ₫</span>
+                                <!-- Giá cũ -->
+                                <span>3.590.000 ₫</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="recommander-item">
+                        <a href="" class="recommander-item-link">
+                            <img src="https://hoanghamobile.com/i/productlist/dsp/Uploads/2021/02/19/a20s-3.png">
+                            <!-- Tên điện thoại -->
+                            <span class="recommander-item-name">Samsung Galaxy A02s 4GB/64GB - Chính hãng</span>
+                            <div class="recommander-item-price">
+                                <!-- Giá mới -->
+                                <span>2.980.000 ₫</span>
+                                <!-- Giá cũ -->
+                                <span>3.590.000 ₫</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="recommander-item">
+                        <a href="" class="recommander-item-link">
+                            <img src="https://hoanghamobile.com/i/productlist/dsp/Uploads/2021/02/19/a20s-3.png">
+                            <!-- Tên điện thoại -->
+                            <span class="recommander-item-name">Samsung Galaxy A02s 4GB/64GB - Chính hãng</span>
+                            <div class="recommander-item-price">
+                                <!-- Giá mới -->
+                                <span>2.980.000 ₫</span>
+                                <!-- Giá cũ -->
+                                <span>3.590.000 ₫</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="recommander-item">
+                        <a href="" class="recommander-item-link">
+                            <img src="https://hoanghamobile.com/i/productlist/dsp/Uploads/2021/02/19/a20s-3.png">
+                            <!-- Tên điện thoại -->
+                            <span class="recommander-item-name">Samsung Galaxy A02s 4GB/64GB - Chính hãng</span>
+                            <div class="recommander-item-price">
+                                <!-- Giá mới -->
+                                <span>2.980.000 ₫</span>
+                                <!-- Giá cũ -->
+                                <span>3.590.000 ₫</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="recommander-item">
+                        <a href="" class="recommander-item-link">
+                            <img src="https://hoanghamobile.com/i/productlist/dsp/Uploads/2021/02/19/a20s-3.png">
+                            <!-- Tên điện thoại -->
+                            <span class="recommander-item-name">Samsung Galaxy A02s 4GB/64GB - Chính hãng</span>
+                            <div class="recommander-item-price">
+                                <!-- Giá mới -->
+                                <span>2.980.000 ₫</span>
+                                <!-- Giá cũ -->
+                                <span>3.590.000 ₫</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="recommander-item">
+                        <a href="" class="recommander-item-link">
+                            <img src="https://hoanghamobile.com/i/productlist/dsp/Uploads/2021/02/19/a20s-3.png">
+                            <!-- Tên điện thoại -->
+                            <span class="recommander-item-name">Samsung Galaxy A02s 4GB/64GB - Chính hãng</span>
+                            <div class="recommander-item-price">
+                                <!-- Giá mới -->
+                                <span>2.980.000 ₫</span>
+                                <!-- Giá cũ -->
+                                <span>3.590.000 ₫</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="recommander-item">
+                        <a href="" class="recommander-item-link">
+                            <img src="https://hoanghamobile.com/i/productlist/dsp/Uploads/2021/02/19/a20s-3.png">
+                            <!-- Tên điện thoại -->
+                            <span class="recommander-item-name">Samsung Galaxy A02s 4GB/64GB - Chính hãng</span>
+                            <div class="recommander-item-price">
+                                <!-- Giá mới -->
+                                <span>2.980.000 ₫</span>
+                                <!-- Giá cũ -->
+                                <span>3.590.000 ₫</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer  -->
+    <footer>
+        <div class="containerr">
+            <div class="supp-ser">
+                <p class="supp-ser-pp">
+                    Hỗ Trợ - Dịch Vụ
+                </p>
+                <ul class="supp-ser-list">
+                    <li class="supp-ser-item">
+                        <a href="">Mua hàng trả góp</a>
+                    </li>
+                    <li class="supp-ser-item">
+                        <a href="">Hướng dẫn đặt hàng và thanh toán</a>
+                    </li>
+                    <li class="supp-ser-item">
+                        <a href="">Chính sách bảo hành</a>
+                    </li>
+                    <li class="supp-ser-item">
+                        <a href="">Câu hỏi thường gặp</a>
+                    </li>
+                    <li class="supp-ser-item">
+                        <a href="">Tra cứu đơn hàng</a>
+                    </li>
+                    <li class="supp-ser-item">
+                        <a href="">Chính sách bảo mật</a>
+                    </li>
+                    <li class="supp-ser-item">
+                        <a href="">Chính sách hủy giao dịch, đổi trả</a>
+                    </li>
+                    <li class="supp-ser-item">
+                        <a href="">Chính sách giải quyết, khiếu nại</a>
+                    </li>
+                    <li class="supp-ser-item">
+                        <a href="">Điều khoản mua bán hàng hóa</a>
+                    </li>
+                    <li class="supp-ser-item">
+                        <a href="">Phạm vi điều khoản gói bảo hành, mở rộng</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="supp-ser">
+                <p class="supp-ser-pp">
+                    Thông Tin Liên Hệ
+                </p>
+                <ul class="supp-ser-list">
+                    <li class="supp-ser-item">
+                        <a href="">Bán hàng Online</a>
+                    </li>
+                    <li class="supp-ser-item">
+                        <a href="">Chăm sóc Khách Hàng</a>
+                    </li>
+                    <li class="supp-ser-item">
+                        <a href="">Hỗ trợ Kỹ thuật</a>
+                    </li>
+                    <li class="supp-ser-item">
+                        <a href="">Hỗ trợ Bảo hành & Sửa chữa</a>
+                    </li>
+                    <li class="supp-ser-item">
+                        <a href="">Liên hệ khối văn phòng</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="supp-ser">
+                <p class="supp-ser-pp">
+                    Hệ thống siêu thị, cửa hàng
+                </p>
+                <ul class="supp-ser-list">
+                    <li class="supp-ser-item">
+                        <a href="">Hệ thống 66 siêu thị, cửa hàng trên toàn quốc</a>
+                    </li>
+                </ul>
+                <div class="logo">
+                    <img src="https://lh3.googleusercontent.com/proxy/FnuGq-bskBMlJ-jbhHfrLfUPg6ea8RsCulAxqDzL-c59OMvwUACsVbuS7F1UXQUNl3pwx9uyC2_XaKcxqRwQIAdqORytjUvrldNSTIn9YG5zJ2BQ3wVvAQ" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>@ Copyright by Group 2 - PMMNM</p>
+            <p>Desgin by Group 2. All acts of copying without permission, subject to legal responsibility.</p>
+        </div>
+    </footer>
+    
+    <script src="./main.js"></script>
+</body>
+<script>
+    function changeImg(id){
+        let imgPath = document.getElementById(id).getAttribute('src');
+        document.getElementById('mainImg').setAttribute('src', imgPath);    
+    }
+</script>
+</html>
