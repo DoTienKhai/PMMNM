@@ -1440,14 +1440,14 @@ footer .copyright p:last-child {
     }
 
     .search input {
-        margin-left: -342px;
+        margin-left: -282px;
         margin-top: 110px;
         width: 294px;
     }
 
     .cart{
-        left: -90px;
-        top: 106px;
+        left: -60px;
+        top: 10px;
     }
 
     .icon{
@@ -1457,10 +1457,10 @@ footer .copyright p:last-child {
 
     }
     .check-cart{
-        position: absolute;
+        position: relative;
 
-        left: -542px;
-        top: 110px;
+        /* left: -542px; */
+        top: 10px;
 
         height: 10px;
     }
